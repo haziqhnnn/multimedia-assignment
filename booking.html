@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bstyle.css" type="text/css">
+    <title>Booking&copy;</title>
+</head>
+<body>  
+    <div class="navi">
+        <div class="logo">
+                <h1>Legoland<sup>&copy;</sup></h1>
+        </div>
+        <div class="menu">
+                <ul>
+                    <li><a href="multi.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="promotion.html">Promotion</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="member.html">Members</a></li>
+                </ul>
+        </div>
+        <div class="signup">
+                <a href="login.html">Sign Up</a>
+        </div>
+    </div>    
+    <div class="body">
+        <div class="background">
+            <div class="booking">
+                <div class="personal">
+                    <h2>Book Your Adventure!</h2>
+                    <form action="">
+                        <label for="fname">First Name :</label>
+                        <input type="text" name="fname" id="fname" required>
+
+                        <label for="lname">Last Name :</label>
+                        <input type="text" name="lname" id="lname" required>
+
+                        <label for="email">Email :</label>
+                        <input type="email" name="email" id="email" required>
+
+                        <label for="contact">Contact Num :</label>
+                        <input type="tel" name="contact" id="contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                    </form>
+                </div>
+                <div class="date">
+                    <label for="checkin">Check-In Date :</label>
+                    <input type="date" name="checkin" id="checkin" required>
+
+                    <label for="checkout">Check-out Date :</label>
+                    <input type="date" name="checkout" id="checkout" required>
+                </div>
+                <div class="paymentmethod">
+                    <label class="method">
+                        <input type="radio" name="payment" value="credit_card">
+                        <div class="method-btn">Credit Card</div>
+                    </label>
+                    <label class="method">
+                        <input type="radio" name="payment" value="paypal">
+                        <div class="method-btn">PayPal</div>
+                    </label>
+                    <label class="method">
+                        <input type="radio" name="payment" value="bank_transfer">
+                        <div class="method-btn">Bank Transfer</div>
+                    </label>
+                </div>
+            </div>
+                <div class="submission">
+                    <button type="submit">Book Now</button>
+                </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
